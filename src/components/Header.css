@@ -1,0 +1,30 @@
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 1px 1px 0px black;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: 100ms 0ms;
+    font-weight: 550;
+}
+
+button:hover{
+    background-color: rgb(197, 241, 241);
+}

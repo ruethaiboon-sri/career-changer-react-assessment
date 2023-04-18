@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Nav {
+    display: flex;
+    color: black;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    height: 50px;
+}
+
+ul {
+    display: flex;
+
+}
+a {
+    text-decoration: none;
+    transform: 500ms;
+}
+a:hover{
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+li {
+    margin-right: 20px;
+    list-style: none;
+
+    cursor: pointer;
+}
