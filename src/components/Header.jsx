@@ -40,6 +40,7 @@ export default function Header() {
       <div className="container">
         <h1>Generation Thailand</h1>
         <h1>React - Assessment</h1>
+        <h1>React - Assessment</h1>
         {/* <Home sector={sector} /> */}
       </div>
       <div className="btn">
