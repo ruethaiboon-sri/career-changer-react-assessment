@@ -1,8 +1,7 @@
 import React from "react";
 import "./User.css";
 
-export default function User(props) {
-  const { item } = props;
+export default function User({ employees }) {
   return (
     <>
       <table>
@@ -11,21 +10,15 @@ export default function User(props) {
           <th>Last Name</th>
           <th>Position</th>
         </tr>
-        <tr>
-          <td>....</td>
-          <td>....</td>
-          <td>....</td>
-        </tr>
-        <tr>
-          <td>....</td>
-          <td>....</td>
-          <td>....</td>
-        </tr>
-        <tr>
-          <td>....</td>
-          <td>....</td>
-          <td>....</td>
-        </tr>
+        <tbody>
+          {employees.map((item, id) => (
+            <tr key={id}>
+              <td>{item.name}</td>
+              <td>{item.lastname}</td>
+              <td>{item.position}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </>
   );
