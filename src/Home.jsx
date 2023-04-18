@@ -1,33 +1,35 @@
-const mockEmployees = [
-  {
-    id: 0,
-    name: "mock",
-    lastname: 'mocklastname',
-    position: "Manager"
-  },
-  {
-    id: 1,
-    name: "employee 1",
-    lastname: "em",
-    position: "Engineer"
-  },
-  {
-    id: 2,
-    name: "employee 2",
-    lastname: "lord",
-    position: "Designer"
-  },
-]
+import React from "react";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Admin from "./components/Admin";
+import User from "./components/Menu";
 
 const Home = () => {
-
   return (
-    <div>
+    <>
+      <Navbar />
+      <Header />
+      <User />
+    </>
+  );
+};
 
-    </div>
-  )
-}
+//   if (sector === "user") {
+//     return (
+//       <>
+//         <Navbar />
+//         <Header />
+//         <User />
+//       </>
+//     );
+//   }
 
-
-
-export default Home
+//   return (
+//     <>
+//       <Navbar />
+//       <Header />
+//       <div></div>
+//     </>
+//   );
+// };
+export default Home;
