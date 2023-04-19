@@ -17,3 +17,28 @@ label{
     justify-content: center;
     align-items: center;
 }
+
+table{
+    width: 500px;
+    height: 50px;
+    margin: 20px;
+
+}
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+thead{
+    background-color: rgb(142, 234, 255);
+}
+#deleteBtn{
+    width: 100px;
+    height: 30px;
+    color: red;
+    box-shadow: none;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

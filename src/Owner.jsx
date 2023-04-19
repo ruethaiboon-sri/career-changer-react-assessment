@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import "./Owner.css";
-
+import myimage from "../src/images/cutedog.avif";
 function Owner() {
   return (
     <>
       <Navbar />
       <div className="container">
         <h1>Pan - Group H - 37</h1>
-        <img src="https://images.unsplash.com/photo-1470093851219-69951fcbb533?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+        <img src={myimage} />
         <h4>Short Biography: </h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

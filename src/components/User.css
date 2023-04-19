@@ -1,0 +1,14 @@
+table{
+    width: 500px;
+    height: 50px;
+    margin: 20px;
+
+}
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+thead{
+    background-color: rgb(171, 240, 255);
+}

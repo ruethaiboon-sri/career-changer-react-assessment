@@ -59,40 +59,46 @@ export default function Admin({ employees, setEmployees, deleteItem }) {
           </button>
         </form>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Last Name</th>
-            <th>Position</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {employees.map((item, index) => (
-            <tr key={index}>
-              <td>{item.name}</td>
-              <td>{item.lastname}</td>
-              <td>{item.position}</td>
-              <td>
-                <button onClick={() => handleDelete(item.id)}>Delete</button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-        {newEmployee.name && (
-          <tbody>
+      <div className="table">
+        <table>
+          <thead>
             <tr>
-              <td>{newEmployee.name}</td>
-              <td>{newEmployee.lastname}</td>
-              <td>{newEmployee.position}</td>
-              <td>
-                <button onClick={() => setNewEmployee({})}>Delete</button>
-              </td>
+              <th>Name</th>
+              <th>Last Name</th>
+              <th>Position</th>
+              <th>Action</th>
             </tr>
+          </thead>
+          <tbody>
+            {employees.map((item, index) => (
+              <tr key={index}>
+                <td>{item.name}</td>
+                <td>{item.lastname}</td>
+                <td>{item.position}</td>
+                <td>
+                  <button id="deleteBtn" onClick={() => handleDelete(item.id)}>
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            ))}
           </tbody>
-        )}
-      </table>
+          {newEmployee.name && (
+            <tbody>
+              <tr>
+                <td>{newEmployee.name}</td>
+                <td>{newEmployee.lastname}</td>
+                <td>{newEmployee.position}</td>
+                <td>
+                  <button id="deleteBtn1" onClick={() => setNewEmployee({})}>
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          )}
+        </table>
+      </div>
     </>
   );
 }
