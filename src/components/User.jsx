@@ -1,5 +1,5 @@
 import React from "react";
-import "./User.css";
+import "/src/components/User.css";
 
 export default function User({ employees }) {
   return (

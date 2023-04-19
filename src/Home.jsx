@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Admin from "./components/Admin";
 import User from "./components/User";
-import "./Home.css";
+import "/src/Home.css";
 
 const Home = () => {
   const [sector, setSector] = useState("default");

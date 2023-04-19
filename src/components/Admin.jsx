@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Admin.css";
+import "/src/components/Admin.css";
 
 export default function Admin({ employees, setEmployees, deleteItem }) {
   const [name, setName] = useState("");

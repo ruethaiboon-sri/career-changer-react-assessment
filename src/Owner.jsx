@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import "./Owner.css";
+import "/src/Owner.css";
 import myimage from "../src/images/cutedog.avif";
 function Owner() {
   return (
